@@ -21,3 +21,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.card-img-top img{
+  height: 220px;
+  width:350px;
+}
+
+.portfolio-container {
+  padding-left: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
