@@ -1,5 +1,16 @@
 body {
-  font-family: "League Spartan", sans-serif;;
+  font-family: "League Spartan", sans-serif;
+  font-size: large;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 .img-fluid {
@@ -7,6 +18,24 @@ body {
   width: 480px;
   margin-top: 1.5rem;
   margin-left: 4.5rem;
+}
+
+@-webkit-keyframes animateWave {
+  0% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes animateWave {
+  0% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 .wave-bg {
