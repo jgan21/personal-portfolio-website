@@ -51,9 +51,26 @@ html {
   background-repeat: no-repeat;
 }
 
-.card-img-top img{
-  height: 220px;
-  width:350px;
+.card {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  justify-content: flex-start; /* Ensure content starts from the top */
+  align-items: stretch; /* Ensure the card's width stretches with the content */
+}
+
+.card-img-top {
+  width: 100%; /* Make the image container take the full width of the card */
+  height: auto; /* Keep aspect ratio */
+}
+
+.card-img-top img {
+  width: 100%; /* Make the image take up the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure image fills the container without distortion */
+}
+
+.card-body {
+  padding: 1.5rem; /* Adjust content padding */
 }
 
 @media (max-width: 767px) {
@@ -67,7 +84,7 @@ html {
 
   .portfolio-container {
     padding-left: 0;
-    display: block;
+    display: block
   }
 }
 
