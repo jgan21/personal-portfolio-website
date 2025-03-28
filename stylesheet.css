@@ -14,10 +14,10 @@ html {
 }
 
 .img-fluid {
-  height: 480px;
-  width: 480px;
+  height: auto;
+  max-width: 100%;
   margin-top: 1.5rem;
-  margin-left: 4.5rem;
+  margin-left: 0;
 }
 
 @-webkit-keyframes animateWave {
@@ -56,8 +56,18 @@ html {
   width:350px;
 }
 
-.portfolio-container {
-  padding-left: 5rem;
-  display: flex;
-  justify-content: space-between;
+@media (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .img-fluid {
+    margin-left: 0;
+  }
+
+  .portfolio-container {
+    padding-left: 0;
+    display: block;
+  }
 }
+
